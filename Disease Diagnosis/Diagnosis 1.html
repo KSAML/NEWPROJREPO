@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/*div.container {
+    width: 100%;
+    border: 1px solid gray;
+}*/
+
+
+header{
+
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	font-family:verdana;
+    border-radius: 25px;
+    background: #73AD21;
+    /*padding: 20px;
+    width: 200px;
+    height: 150px;*/
+	
+}
+footer {
+
+    padding: 5em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: center-right;
+    max-width: 1000px;
+    margin:0px;
+    padding:5em;
+	background:#eee;
+	height:500px;
+	color: black;
+	border-radius: 15px 50px;
+}
+
+nav ol {
+    /*list-style-type: none;*/
+    padding:0;
+	text-align:left;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+	font-size:20;
+    text-align:center-left;
+	background-color:rgb(0,200,200);
+	float:center;
+	padding: 5em;
+	font-family:verdana;
+		border-radius: 15px 50px 30px 5px;
+    /* background: #73AD30;
+    padding: 20px;
+    width: 200px;
+    height: 150px;*/
+	
+}
+
+a{
+	font-size:24px;
+}
+
+label{
+	font-size:30px;
+
+}
+
+Button{
+	border-radius: 25px;
+    background: #73AD21;
+	}
+	table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 0px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+	
+}
+
+ol {
+	/*align:left;*/
+}
+</style>
+</head>
+<body bgcolor="light-blue">
+
+<div class="container">
+
+<header>
+   <h1>
+Health Diagnosis       ||       Keep safe    ||   Live long
+ </h1
+</header>
+  
+<!--nav>
+  <ul style="font-size:22px";>
+    
+    <h1><b><strong>Hello There!<br><br><br>Welcome<br><br><br>We'll take your details first</strong></b></h1>
+  </ul>
+</nav-->
+
+<article> <!--background-color:rgb(0,200,200)">
+<title>Registration Page</title>
+<h2> <strong> Please fill out the form below </strong> </h2>
+ <!--div "id=reg-form"-->
+ <!--form>
+ <label for="first name"><b>First Name:</b></label><br>
+ <input type="text" name="first name" pattern="[a-z]" placeholder="First Name" required><br><br>
+ <label for="Last Name"><b>Other Names:</b></label><br>
+ <input type="text" name="Last Name" pattern="[a-z]" placeholder="Other Names" required><br><br>
+ 
+ <label for="gender-Male"><b>Male</b></label>
+ <input type="radio" name="Gender-Male" value="choice 1"><br><br>
+ 
+ <label for="gender-Female"><b>Female</b></label>
+ <input type="radio" name="Gender-Male" value="choice 2"><br><br>
+ 
+
+
+ <label for="Email"><b>Email Address:</b></label><br>
+ <input type="Email" name="Email Address" Placeholder="e.g ****@gmail.com"><br><br></input>
+ 
+ <label for="Contact"><b>Contact:<b></label><br>
+ <input type="Contact" name="PhoneContact" placeholder="Enter your phone number"><br></input><br>
+ 
+ <label for="Blood Group">Blood Group</label><br>
+ <Select placeholder="Group">
+ <option value="0" selected disabled>Group</option><br><br>
+ <option value="A">A</option>
+ <option value="B">B</option>
+ <option value="AB">AB</option>
+ <option value="O">O</option>
+ </select>
+ </form> 
+ <br><br><br>
+ 
+     <!--li><a href="Disease 3.html">HOMEPAGE</a></li--><br><br-->
+</article-->
+Welcome <?php echo $_GET["name"]; ?><br>
+<H2>Here is the information you provided</H2>
+<nav>
+
+<table>
+  <tr>
+    <th>Personal Details</th>
+    <th align="center">Your Signs and Symptoms</th>
+    <th>Personal diseases and habits</th>
+  </tr>
+  <tr>
+    <td align="left">First Name "+":</td>
+    <td>Fever</td>
+    <td>Smoke Cigarettes</td>
+  </tr>
+  <tr>
+    <td align="left">Gender:</td>
+    <td>Flue</td>
+    <td>High Cholestral Levels</td>
+  </tr>
+  <tr>
+    <td align="left">Email Address:</td>
+    <td>Pain In the Joints</td>
+    <td>Hiypertension</td>
+  </tr>
+  <tr>
+    <td align="left">Contact</td>
+    <td>Neusea</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">Blood-group</td>
+    <td>headache</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td align="left">Blood-group</td>
+    <td>Loss of Apetite</td>
+    <td></td>
+  </tr>
+</table>
+
+
+<h2>Recommendations</h2>
+<ol style="list-style-type:disc" align="left">
+<li>Decrease you tobbacco?cigarette use.</li>
+<li>See councilor to help you quit the habbit</li>
+<li>You need to engage in more high energy activities as well as energy givving foods</li>
+<li>Include more fruit and vegetable on t your menue.</li>
+
+</ol>
+</nav>
+<h1><b>Basing on the information provided,<br> You are most likely suffering from:<h1> COVID-19</h1><br><b> Or else you have a bacterial infection </b></h2>
+</article>
+<footer>
+<ul style="float:right">
+<button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+	<b><strong><a style="font-family:verdana " href="Disease 1.html">Take survey again<<<</a></strong></b>
+	</button>
+	</ul>
+	
+	 <!--button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+      
+    <b><strong><a style="font-family:verdana" href="Disease 2.html">Take survey again<<</a></strong></b><br>
+	</button-->
+
+<b style="align:left";>Developed by Group 16 Recess Term 2020<b><br>
+	<b style="color:green;">Copyright © CSAR Technologies<b>
+</footer>
+
+</div>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Nov 2016 06:14:55 GMT -->
+</html>

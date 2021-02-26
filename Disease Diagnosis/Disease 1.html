@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration Page </title>
+<style>
+/*div.container {
+    width: 100%;
+    border: 1px solid gray;
+}*/
+
+
+header{
+
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	font-family:verdana;
+    border-radius: 25px;
+    background: #73AD21;
+    /*padding: 20px;
+    width: 200px;
+    height: 150px;*/
+	
+}
+footer {
+
+    padding: 5em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	 border-radius: 25px;
+
+}
+
+nav {
+    float: left;
+    max-width: 100px;
+    margin:0px;
+    padding:6em;
+	background:#eee;
+	height:500px;
+	color: black;
+	border-radius: 15px 50px;
+}
+
+nav ul {
+    /*list-style-type: none;*/
+    padding:0;
+	text-align:center-left;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+	font-size:20;
+    text-align:center-left;
+	background-color:rgb(0,200,200);
+	float:center;
+	padding: 5em;
+	font-family:verdana;
+	border-radius: 15px 50px 30px 5px;
+	border:none;
+    /* background: #73AD30;
+    padding: 20px;
+    width: 200px;
+    height: 150px;*/
+	
+}
+
+a{
+	font-size:24px;
+}
+
+label{
+	font-size:30px;
+
+}
+
+Button{
+	border-radius: 5px 25px 25px 4px;
+    background: #73AD21;
+	}
+img {
+    border-radius: 50%;
+	float:top
+	}
+</style>
+
+<button _ngcontent-omb-c44="" class="submit-button mat-focus-indicator mat-raised-button mat-button-base mat-primary" color="primary" mat-raised-button="" type="submit"><span class="mat-button-wrapper"><!----><span _ngcontent-omb-c44="" class="ng-star-inserted"> Continue </span><!----></span><span class="mat-button-ripple mat-ripple" matripple=""></span><span class="mat-button-focus-overlay"></span></button>
+
+</head>
+<body bgcolor="silver">
+
+<div class="container">
+
+<header>
+   <h1>
+Health Diagnosis       ||       Keep safe    ||   Live long
+ </h1
+</header>
+  
+<nav>
+<!--img src="guy.jpg"  style="width:300px;height:150px;"-->
+
+  <ul style="font-size:22px";>
+    
+    <h1><b><strong>Hello There!<br><br><img padding-left="" align="center-left" src="guy.jpg"  style="width:180px;height:150px;padding-left:0px;"><br><br>We'll take your details first</strong></b></h1>
+	
+  </ul>
+</nav>
+
+<article background-color:rgb(0,200,200)">
+
+<!--div "id=reg-form"-->
+<!--form action="Diagnosis 2.php" method="get">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+
+Gender:
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Male">Male
+
+<input type="submit">
+</form-->
+
+<h1 style ="color:black"><u><strong> Please fill out the form below</strong></u></h1>
+
+
+ 
+ <form  action="Diagnosis 2.php" method="POST">
+ <p>* required</p>
+<label><b>First Name:</b></label> <input border="none" align="center" style="border-radius: 50px 25px 50px 25px;" type="text" name="name" required>*<br><br>
+<br><br>
+ <!--input type="text" name="name"><br-->
+<label><b>Other Names:</b></label> <input style="border-radius: 50px 25px 50px 25px;" type="text" name="name1" required>*<br><br>
+<br><br>
+ 
+<label><b>Gender:</b></label>
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Male">Male *
+<br><br>
+ 
+<label><b>E-mail:</b></label><input style="border-radius: 50px 25px 50px 25px;" type="text" name="email"><br><br>
+ <br><br>
+ <label for="Contact"><b>Contact:<b></label><br>
+<b>Contact:</b> <input style="border-radius: 50px 25px 50px 25px;" type="number" height="25px" widith="50px" maxlength="10" name="Onlynumbers" pattern="[0-9]" >*<br></input><br><br>
+ <br><br>
+ <label style="border-radius: 50px 25px 50px 25px;" for="Blood Group">Blood Group</label><br>
+Blood Group: <Select name="blood Group">
+ <option value="A">A</option>
+ <option value="B">B</option>
+ <option value="AB">AB</option>
+ <option value="O">O</option>
+ </select>
+ 
+ <br><br><br>
+ 
+     <!--li><a href="Disease 3.html">HOMEPAGE</a></li--><br><br>
+</article>
+
+<footer>
+ <br><br>
+<input type="submit" onclick="Disease 2.php" value="Next>>"></input>
+ </form>
+<!--ul style="float:right">
+<button type="submit" class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+	<b><strong><a style="font-family:verdana " href="Disease 2.html">NEXT</a></strong></b>
+	</button>
+	</ul-->
+
+<b style="align:left";>Developed by Group 16 Recess Term 2020<b><br>
+	<b style="color:green;">Copyright © CSAR Technologies<b>
+</footer>
+
+</div>
+
+
+</body>
+</html>
+<!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_layout_float by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Nov 2016 06:14:55 GMT -->

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<head>
+<header>
+   <h1>
+Health Diagnosis       ||       Keep safe     ||   Live long
+ </h1
+</header>
+<title>Chronic Diseases</title>
+
+
+
+<style>
+/*div.container {
+    width: 100%;
+    border: 1px solid gray;
+}*/
+
+header{
+
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+	font-family:verdana;
+	border-radius: 15px 50px 30px 5px;
+    background: #73AD08;
+   /* padding: 20px;
+    width: 200px;
+    height: 150px;*/
+}
+footer {
+	border-radius:50px 50px 5px 5px;
+    padding: 6em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 100px;
+    margin:0px;
+    padding:5em;
+	background:#eee;
+	height:500px;
+	color: black;
+	border-radius: 15px 50px;
+}
+	
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+	
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+	font-size:20;
+    text-align:center-left;
+	background-color:rgb(0,200,200);
+	float:center;
+	padding: 5em;
+	font-family:verdana;
+	border-radius: 15px 50px 30px 5px;
+    /* background: #73AD30;
+    padding: 20px;
+    width: 200px;
+    height: 150px;*/
+	
+}
+
+a{
+	font-size:24;
+}
+button{
+
+border-radius: 25px;
+    background: #73AD21;
+}
+</style>
+
+</head>
+ <body bgcolor="blue">
+<nav>
+	<h2><b>Please<br><br>check<br><br> all<br><br> the<br><br> statements<br><br>that<br><br> apply<br><br> to<br><br> you.</b></h2>
+	</nav>
+ <article>
+ 
+ 	<?php
+
+//let's start the session
+session_start();
+
+//now, let's register our session variables
+session_register('fever');
+session_register('cough');
+session_register('flue');
+session_register('GBW');
+session_register('PITJ');
+session_register('Neusea');
+session_register('Headache');
+session_register('ST');
+session_register('AP');
+session_register('L.O.A');
+
+//finally, let's store our posted values in the session variables
+$_SESSION['fever'] = $_POST['fever'];
+$_SESSION['cough'] = $_POST['cough'];
+$_SESSION['flue'] = $_POST['flue'];
+$_SESSION['GBW'] = $_POST['GBW'];
+$_SESSION['PITJ'] = $_POST['PITJ'];
+$_SESSION['Neusea'] = $_POST['Neusea'];
+$_SESSION['Headache'] = $_POST['Headache'];
+$_SESSION['ST'] = $_POST['ST'];
+$_SESSION['AP'] = $_POST['AP'];
+$_SESSION['L.O.A'] = $_POST['L.O.A'];
+
+?>
+ 
+ <form action="Diagnosis 2.php"  method="get">
+<!--div class="screen-text-header"><h3 ng-bind="question.text" class="ng-binding">select one answer in each row.</h3></div-->
+	<h1 style ="font-size:35px"><u>PERPETUAL HABITS AND DISORDERS</u></h1>
+	
+	<!-- ngIf: question.required -->
+	<!--span ng-if="question.required" class="validation-notice notice-info ng-scope" style=""-->
+	
+	<!-- end ngIf: question.required --><!-- ngRepeat: choice in questionChoices|orderBy:'position' track by choice.position -->
+		<div ng-class="{'unanswered': !formFields[choice.id]}" class="question-item ng-scope unanswered" ng-repeat="choice in questionChoices|orderBy:'position' track by choice.position" style=""><p class="name ng-binding"><strong>I am over weight(obese)</p><p2></strong></p2>
+	<!--div class="buttons"><input id="choice_187_1000_present" name="choice_187_1000_present" type="radio" value="present" class="radio-input ng-pristine ng-untouched ng-valid ng-empty" ng-model="formFields[choice.id]"></div-->
+		
+  <input type="radio" name="gender1" value="You are overweight" checked> Yes 
+  <input type="radio" name="gender1" value="You are not overweight"> No<br><br>
+  <!--input type="radio" name="gender" value="other"> Other</input-->	
+	<!-- end ngRepeat: choice in questionChoices|orderBy:'position' track by choice.position -->	
+		<div ng-class="{'unanswered': !formFields[choice.id]}" class="question-item ng-scope unanswered" ng-repeat="choice in questionChoices|orderBy:'position' track by choice.position" style=""><p class="name ng-binding"><strong>I smoke Cigarettes</p><p2></strong></p2>
+	
+  <input type="radio" name="gender2" value="You smoke cigarrettes" > Yes 
+  <input type="radio" name="gender2" value="You dont smoke Cigarettes"> No<br><br>
+  <!--input type="radio" name="gender" value="other"> Other</input-->	
+	<!-- end ngRepeat: choice in questionChoices|orderBy:'position' track by choice.position -->
+	
+	<div ng-class="{'unanswered': !formFields[choice.id]}" class="question-item ng-scope unanswered" ng-repeat="choice in questionChoices|orderBy:'position' track by choice.position" style=""><p class="name ng-binding"><strong>I have suffered an intense injury recentry</p><p2></strong></p2>
+	
+  <input type="radio" name="gender3" value="You havent suffered an injury lately"> Yes 
+  <input type="radio" name="gender3" value="You have suffered an injury lately">No<br><br>
+  <!--input type="radio" name="gender" value="other"> Other</input-->
+	
+	<!-- end ngRepeat: choice in questionChoices|orderBy:'position' track by choice.position -->	
+	<div ng-class="{'unanswered': !formFields[choice.id]}" class="question-item ng-scope unanswered" ng-repeat="choice in questionChoices|orderBy:'position' track by choice.position" style=""><p class="name ng-binding"><strong>My cholestral levels are High</p><p2></strong></p2>
+	
+  <input type="radio" name="gender4" value="Your cholestral levels are High" > Yes 
+  <input type="radio" name="gender4" value="Your cholestral levels arent high"> No
+  <input type="radio" name="gender4" value="Your cholestral levels are normal">Normal<br><br>
+  
+  
+  <!--input type="radio" name="gender" value="other"> Other</input-->	
+	<!-- end ngRepeat: choice in questionChoices|orderBy:'position' track by choice.position -->
+	
+	<div ng-class="{'unanswered': !formFields[choice.id]}" class="question-item ng-scope unanswered" ng-repeat="choice in questionChoices|orderBy:'position' track by choice.position" style=""><p class="name ng-binding"><strong>I have hypertention(basing on most recent test)</p><p2></strong></p2>
+	
+  <input type="radio" name="gender5" value="Your blood pressure is high" > Yes
+  <input type="radio" name="gender5" value="Your blood pressure is low"> No
+  <input type="radio" name="gender5" value="Your blood pressure is Normal">Normal<br><br>
+  
+  <!--input type="radio" name="gender" value="other"> Other</input-->  	
+   <input type="submit" value="Diagnosis">
+</form>   
+		</article>
+      <!--/button>
+	  <button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+      
+      	
+	
+	<!--li><a href="Disease 3.html">NEXT >></a></li--> <br>
+	<footer>
+	<!--ul style="float:right">
+    <button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+      
+    <b><strong><a style="font-family:verdana" href="Disease 2.html">PREVIOUS<<</a></strong></b><br>
+	</button>
+	
+	
+	 <button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+	<b><strong><a style="font-family:verdana" href="Diagnosis 1.html">See Diagnosis</a></strong></b>
+	</button>
+	<ul-->
+	
+	  <button class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" 
+	style="border-radius:25px 5px 5px 25px;">
+      
+    <b><strong><a style="font-family:verdana"  href="Disease 2.html">BACK<<</a></strong></b><br>
+	</button><br>
+	
+<button onclick="myFunction()" class="btn btn-link btn-back-footer hidden-print" ng-class="{ 'hidden' : !controls.showPrevious }" ng-disabled="controls.animationInProgress" ng-click="controls.animationInProgress || navigation.previousScreen()" style="">
+	<b><strong><a style="font-family:verdana" href="Diagnosis 2.html">See Diagnosis</a></strong></button><br><br>
+ 
+	
+	<b style="align:left";>Developed by Group 16 Recess Term 2020<b><br>
+	<b style="color:green;">Copyright &copy; CSAR Technologies<b>
+	</footer>
+	
+
+	
+	
+
+</body>
