@@ -1,2 +1,0 @@
-# NEWPROJREPO
-project work only
